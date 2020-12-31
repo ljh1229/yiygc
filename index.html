@@ -62,7 +62,7 @@
 				history.pushState({}, "不会百度么？", "/");
 				var o = location.origin + location.pathname + "yiygc/?s=" + n(t);
 				输出结果.innerHTML = '<h3>生成链接</h3><p>通用地址：<a href="' + o + '">' + o +
-					'</a></p><p class="获取短链">获取短链：<span style="#999">生成中…</span></p>';
+					'</a></p><p class="获取短链">获取短链：<span style="#999">获取中…（如果一直显示，则为浏览器问题）</span></p>';
 				var e = new XMLHttpRequest;
 				e.open("GET", "https://urlc.cn/api/?key=4bHR17qEB6vY&url=" + n(o), 1), e.onload = function() {
 					var s = e.response;
